@@ -1,4 +1,10 @@
 <?php
+//use ob_start() when code may be ported to other servers. Do not depend on the output buffering in the php.ini file.
+ob_start();//output buffering is turned on
+
+
+
+
 // Assign file paths to PHP constants
   // __FILE__ returns the current path to this file
   // dirname() returns the path to the parent directory

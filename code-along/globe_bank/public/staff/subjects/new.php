@@ -1,6 +1,6 @@
 <?php require_once('../../../private/initialize.php');//!Header data requires there to be no spaces
 //!white space like this is ok
-$test =$_GET[$test]?? '';
+$test = $_GET['test']?? '';
 
 if($test =='404'){
     error_404();
@@ -8,8 +8,7 @@ if($test =='404'){
     error_500();
 }
 elseif($test=='redirect'){
-header("Location:".url_for('staff/subjects/index.php'));
-exit;
+redirect_to(url_for('staff/subjects/index.php'));
 }
 else {
     echo 'No error';
