@@ -9,7 +9,7 @@ function url_for($script_path){
   }
   
   function redirect_to($location){
-    header("Location:". $location);
+    header("Location:". $location);//redirect to function accesses the header to redirect the user to a new page.
   exit;
   }
 
