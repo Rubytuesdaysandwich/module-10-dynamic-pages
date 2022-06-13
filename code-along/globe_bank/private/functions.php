@@ -26,4 +26,5 @@ function error_500(){
   header($_server["server_protocol"]."500 Internal Server Error");//500 internal server error
   exit;
  }
+ 
 ?>
