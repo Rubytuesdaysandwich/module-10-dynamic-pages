@@ -18,12 +18,8 @@ and open the template in the editor.
         <?php include('../private/shared/links_header/links_header.php');//links header path?>
         <?php $page= get_id(); ?>
         <?php echo $page;?>
-        <?php
-        
-        
-        
-        
-        ?>
+        <br/>
+        <?php display_content($page);?>
         <?php include('../private/shared/links_footer/links_footer.php');//links footer path?>
         
     </body>
